@@ -1,0 +1,179 @@
+* {
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+      90deg,
+      transparent 79px,
+      #abced4 79px,
+      #abced4 81px,
+      transparent 81px
+    ),
+    linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+}
+
+body,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #272f3e;
+  height: 60px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  font-size: 115%;
+}
+
+.center {
+  text-align: center;
+}
+.gradient {
+  background: #a84dcf;
+  background: linear-gradient(to right, #a84dcf 6%, #cf4b4b 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.5rem;
+}
+
+#logo-container svg {
+  width: 100px;
+  height: auto;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 30rem;
+}
+
+#about h1,
+h2,
+h3 {
+  font-family: "Permanent Marker", cursive;
+}
+
+.about-text {
+  align-self: center;
+  width: 80%;
+
+  font-size: 1.4rem;
+  font-family: "Inter", sans-serif;
+}
+
+.about-text h1 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+#content-section {
+  padding: 0 0.5rem;
+}
+
+#content-section h1 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.card-container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  border-radius: 20px;
+  margin: 1rem;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid grey;
+}
+.card h2 {
+  padding-top: 1rem;
+}
+
+.card:hover {
+  box-shadow: 0 5px 11px rgba(32, 194, 239, 0.2);
+  color: rgb(94, 208, 246);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.card p {
+  padding: 0 1rem;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #272f3e;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer div a {
+  padding: 0.3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #logo-container svg {
+    width: 50px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card-container {
+    flex-wrap: wrap;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hiden {
+    display: none;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+  }
+  #about {
+    margin-top: 5rem;
+  }
+  nav ul {
+    margin: 0;
+    padding: 1rem;
+    font-size: 0.75rem;
+  }
+}
